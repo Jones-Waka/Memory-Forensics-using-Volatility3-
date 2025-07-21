@@ -3,6 +3,10 @@ I will use Volatility3 to analyze MemLabs/Lab 1 Memory Dump Beginner's Luck Chal
 
 This write-up documents how I analyzed [MemLabs Lab 1 - Beginner's Luck](https://github.com/stuxnet999/MemLabs/tree/master/Lab%201) on my homelab running Kali Linux.
 
+Challenge description
+My sister's computer crashed. We were very fortunate to recover this memory dump. Your job is getting all her important files from the system. From what we remember, we suddenly saw a black window pop up with something being executed. When the crash happened, she was trying to draw something. Thats all we remember from the time of crash.
+
+
 
 ### ✅ Download and Unzip the MemoryDump
 Download the [memory dump](https://mega.nz/#!6l4BhKIb!l8ATZoliB_ULlvlkESwkPiXAETJEF7p91Gf9CWuQI70) from [here](https://mega.nz/#!6l4BhKIb!l8ATZoliB_ULlvlkESwkPiXAETJEF7p91Gf9CWuQI70)
