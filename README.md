@@ -20,7 +20,7 @@ Download and unzip the file as per the below screenshots:
 📸 [unzipped memlab raw file](https://github.com/Jones-Waka/Volatility/blob/screenshots/INSTALL%20SYSTEM%20DEPENDENCIES.JPG))
 
 
-### ✅ Extracting Windows Info
+### Extracting Windows Info
 Since am using Volatility3 no need to identify OS Profile, however you can use the below command if you are using Volatility2 run the below command:
 (sudo python3 vol.py -f /home/kali/Downloads/MemoryDump_Lab1.raw imageinfo)
 
