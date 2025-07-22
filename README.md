@@ -3,12 +3,12 @@ I will use Volatility3 to analyze MemLabs/Lab 1 Memory Dump Beginner's Luck Chal
 
 This write-up documents how I analyzed [MemLabs Lab 1 - Beginner's Luck](https://github.com/stuxnet999/MemLabs/tree/master/Lab%201) on my homelab running Kali Linux.
 
-### ✅ Challenge Description
+###  Challenge Description
 My sister's computer crashed. We were very fortunate to recover this memory dump. Your job is getting all her important files from the system. From what we remember, we suddenly saw a black window pop up with something being executed. When the crash happened, she was trying to draw something. Thats all we remember from the time of crash.
 
 
 
-### ✅ Download and Unzip the MemoryDump
+### Download and Unzip the MemoryDump
 Download the [memory dump](https://mega.nz/#!6l4BhKIb!l8ATZoliB_ULlvlkESwkPiXAETJEF7p91Gf9CWuQI70) from [here](https://mega.nz/#!6l4BhKIb!l8ATZoliB_ULlvlkESwkPiXAETJEF7p91Gf9CWuQI70)
 
 Download and unzip the file as per the below screenshots:
@@ -33,7 +33,7 @@ sudo python3 vol.py -f /home/kali/Downloads/MemoryDump_Lab1.raw windows.info
 
 ---
 
-### ✅ Checking Running Processes when the memory dump was extracted
+###  Checking Running Processes when the memory dump was extracted
 A SOC analyst should be familiar with normal window processes in order to identify any strange processes. Volatility has various plugins that can be used to extract running processes when the memory dump was generated.
 
 Allow me to share output for the three plugins:
@@ -52,7 +52,7 @@ sudo python3 vol.py -f /home/kali/Downloads/MemoryDump_Lab1.raw windows.psscan
 📸 [psscan](https://github.com/Jones-Waka/Volatility/blob):PsScan : is more thorough and can detect hidden or terminated processes, but it may include false positives and is slower.
 
 
- ✅ The processes that standout:
+  The processes that standout:
  
  - WinRAR.exe  - (PID :1512) 
  
@@ -75,12 +75,12 @@ sudo python3 vol.py -f /home/kali/Downloads/MemoryDump_Lab1.raw windows.psscan
 ---
 
 
-## 📊 Reference
+##  Reference
 
 [Volatility Foundaton Github Page](https://github.com/volatilityfoundation/volatility/wiki/installation)
 
 [Tryhackme Volatility Module](https://tryhackme.com/room/volatility)
 
-## 📊 GitHub Stats  
+##  GitHub Stats  
 
 ![Jones's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Jones-Waka&show_icons=true&theme=radical) 
